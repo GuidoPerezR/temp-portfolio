@@ -1,1 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-secondary: #ec4f71;
+  --color-dark-rose: #e21945;
+
+  --font-montserrat: 'Montserrat Variable', sans-serif;
+}
