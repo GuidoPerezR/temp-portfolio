@@ -1,7 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Hero from '@/sections/Hero.astro';
+import Layout from '../layouts/Layout.astro';
+import Experience from '@/sections/Experience.astro';
+import Projects from '@/sections/Projects.astro';
+import AboutMe from '@/sections/AboutMe.astro';
+import Contact from '@/sections/Contact.astro';
 ---
 
 <Layout>
-  <h1>Hola mundo</h1>
+  <main class="w-full px-6 py-12">
+    <Hero />
+    <Experience />
+    <Projects />
+    <AboutMe />
+    <Contact />
+  </main>
 </Layout>
+
+<style>
+  main {
+    animation: fade-in 700ms ease-in-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
