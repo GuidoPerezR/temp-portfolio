@@ -1,0 +1,91 @@
+---
+import ProjectCard from '@/components/ProjectCard.astro';
+
+import JavaScrpipt from '@/components/icons/JavaScrpipt.astro';
+import Tailwind from '@/components/icons/Tailwind.astro';
+import AstroIcon from '@/components/icons/AstroIcon.astro';
+import Zod from '@/components/icons/Zod.astro';
+import HTML from '@/components/icons/HTML.astro';
+import CSS from '@/components/icons/CSS.astro';
+
+const TECHNOLOGIES = {
+  ASTROO: {
+    name: 'Astro',
+    icon: AstroIcon,
+  },
+  JAVASCRIPT: {
+    name: 'JavaScript',
+    icon: JavaScrpipt,
+  },
+  TAILWIND: {
+    name: 'Tailwind CSS',
+    icon: Tailwind,
+  },
+  ZOD: {
+    name: 'Zod',
+    icon: Zod,
+  },
+  HTML: {
+    name: 'HTML',
+    icon: HTML,
+  },
+  CSS: {
+    name: 'CSS',
+    icon: CSS,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: 'Luminari - Landing page sobre una Galería de Arte',
+    description:
+      'Desarrollado con un enfoque en la experiencia del usuario, implementando movimientos parallax, animación con scroll horizontal y animaciones dinámicas con GSAP.',
+    technologies: [
+      TECHNOLOGIES.ASTROO,
+      TECHNOLOGIES.JAVASCRIPT,
+      TECHNOLOGIES.TAILWIND,
+    ],
+    image: '/luminari.webp',
+    url: 'https://luminari-gallery.vercel.app/',
+    github: 'https://github.com/GuidoPerezR/luminari',
+  },
+  {
+    title: 'Nahual Studio - Landing page para un estudio de diseño gráfico ',
+    description:
+      'Implementación de una aplicación web para aumentar la visualización del estudio y centralizando toda la información del cliente en un solo lugar. Desarrollo de interfaces atractivas, animaciones simples y un diseño que pueda representar a la marca.',
+    technologies: [
+      TECHNOLOGIES.ASTROO,
+      TECHNOLOGIES.JAVASCRIPT,
+      TECHNOLOGIES.TAILWIND,
+      TECHNOLOGIES.ZOD,
+    ],
+    image: '/nahual-studio.webp',
+    url: 'https://nahual-studio.vercel.app/',
+    github: 'https://github.com/GuidoPerezR/nahual-studio',
+  },
+  {
+    title: 'Manjares - Landing page sobre una cafetería',
+    description:
+      'Proyecto que me permitió sentar las bases de la programación web, mejorando la semántica, el diseño y la interactividad de mis proyectos. Sitio diseñado para ofrecer una experiencia cálida, elegante y visualmente atractiva.',
+    technologies: [
+      TECHNOLOGIES.HTML,
+      TECHNOLOGIES.CSS,
+      TECHNOLOGIES.JAVASCRIPT,
+    ],
+    image: '/manjares.webp',
+    url: 'https://guidoperezr.github.io/cafeteria-landing-page/',
+    github: 'https://github.com/GuidoPerezR/cafeteria-landing-page',
+  },
+];
+---
+
+<section class="w-full scroll-m-12 py-16" id="projects">
+  <div class="mx-auto w-full max-w-5xl">
+    <header>
+      <h2 class="text-4xl font-bold">Proyectos</h2>
+    </header>
+    <div class="mt-10 flex flex-col gap-16 md:gap-24">
+      {PROJECTS.map((project) => <ProjectCard {...project} />)}
+    </div>
+  </div>
+</section>
