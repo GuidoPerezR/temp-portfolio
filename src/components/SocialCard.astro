@@ -1,0 +1,22 @@
+---
+const { icon: Icon, name, url, user, download } = Astro.props;
+---
+
+<article
+  class="outline-secondary flex items-center gap-4 rounded-xl p-6 outline-1"
+>
+  <div class="bg-secondary/20 rounded-2xl p-4">
+    <Icon class="size-8 opacity-100" />
+  </div>
+  <div class="w-full">
+    <p class="text-sm font-medium opacity-85">{name}</p>
+    <a
+      download={download}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-secondary break-all text-lg font-semibold transition-colors duration-200"
+      >{user}</a
+    >
+  </div>
+</article>

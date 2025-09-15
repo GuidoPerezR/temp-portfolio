@@ -1,0 +1,47 @@
+---
+import File from '@/components/icons/File.astro';
+import GitHub from '@/components/icons/GitHub.astro';
+import LinkedIn from '@/components/icons/LinkedIn.astro';
+import ContactIcon from '@/components/icons/Contact.astro';
+import SocialCard from '@/components/SocialCard.astro';
+import CV from '@/files/Currículum_Vitae_Guido_Perez_Ruiz.pdf';
+
+const SOCIALS = [
+  {
+    icon: GitHub,
+    name: 'GitHub',
+    url: 'https://github.com/GuidoPerezR',
+    user: 'GuidoPerezR',
+  },
+  {
+    icon: LinkedIn,
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/guidoperezr/',
+    user: 'guidoperezr',
+  },
+  {
+    icon: ContactIcon,
+    name: 'Correo',
+    url: 'mailto:guidoperez27@hotmail.com',
+    user: 'guidoperez27@hotmail.com',
+  },
+  {
+    icon: File,
+    name: 'Curriculum Vitae',
+    url: '/files/Currículum_Vitae_Guido_Perez_Ruiz.pdf',
+    user: 'Descargar',
+    download: true,
+  },
+];
+---
+
+<section class="w-full scroll-m-12 py-16" id="contact">
+  <div class="mx-auto w-full max-w-5xl">
+    <header>
+      <h1 class="text-4xl font-bold">Contacto</h1>
+    </header>
+    <div class="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
+      {SOCIALS.map((social) => <SocialCard {...social} />)}
+    </div>
+  </div>
+</section>
