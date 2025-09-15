@@ -1,0 +1,59 @@
+---
+import Home from '@/components/icons/Home.astro';
+import Experience from '@/components/icons/Experience.astro';
+import Project from '@/components/icons/Project.astro';
+import AboutMe from '@/components/icons/AboutMe.astro';
+import Contact from '@/components/icons/Contact.astro';
+---
+
+<div
+  class="text-secondary bg-primary/80 fixed top-0 z-20 w-full px-4 py-6 backdrop-blur-sm"
+>
+  <nav class="mx-auto flex max-w-4xl items-center justify-around">
+    <a
+      href="/#home"
+      title="Ir a Inicio"
+      class="group flex items-center gap-2 font-semibold"
+      ><Home class="size-8" /><span
+        class="group-hover:text-secondary hidden text-white transition-colors duration-200 md:block"
+        >Inicio</span
+      ></a
+    >
+    <a
+      href="/#experience"
+      title="Ir a Experiencia"
+      class="group flex items-center gap-2 font-semibold"
+      ><Experience class="size-8" /><span
+        class="group-hover:text-secondary hidden text-white transition-colors duration-200 md:block"
+        >Experiencia</span
+      ></a
+    >
+    <a
+      href="/#projects"
+      title="Ir a Proyectos"
+      class="group flex items-center gap-2 font-semibold"
+      ><Project class="size-8" /><span
+        class="group-hover:text-secondary hidden text-white transition-colors duration-200 md:block"
+        >Proyectos</span
+      ></a
+    >
+    <a
+      href="/#about-me"
+      title="Ir a Sobre mi"
+      class="group flex items-center gap-2 font-semibold"
+      ><AboutMe class="size-8" /><span
+        class="group-hover:text-secondary hidden text-white transition-colors duration-200 md:block"
+        >Sobre mí</span
+      ></a
+    >
+    <a
+      href="/#contact"
+      title="Ir a Contacto"
+      class="group flex items-center gap-2 font-semibold"
+      ><Contact class="size-8" /><span
+        class="group-hover:text-secondary hidden text-white transition-colors duration-200 md:block"
+        >Contacto</span
+      ></a
+    >
+  </nav>
+</div>
