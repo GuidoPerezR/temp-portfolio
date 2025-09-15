@@ -1,0 +1,32 @@
+---
+import ExperienceCard from '@/components/ExperienceCard.astro';
+
+const EXPERIENCE = [
+  {
+    title: 'Exytur Ventas - Proyecto colaborativo',
+    company: 'Exytur',
+    time: 'Noviembre 2023 - Marzo 2025',
+    description:
+      'Desarrollo de una aplicación web desde cero para automatizar y optimizar el registro de las ventas diarias. Implementación de reportes diarios de las ventas en PDF. Diseño de formularios e interfaces para la gestión y visualización de la información de forma rápida y eficiente.',
+  },
+  {
+    title:
+      'Sistema Integral de Información de Universidades Politécnicas - Pasantía',
+    company: 'Universidad Politécnica de Tapachula',
+    time: 'Agosto 2023 - Agosto 2024',
+    description:
+      'Contribuí al desarrollo del sistema interno de una universidad, creando RESTful APIs para la gestión de datos de estudiantes y profesores. Implementé interfaces dinámicas para facilitar la consulta de información. Desarrollé la generación y optimización de reportes en Excel.',
+  },
+];
+---
+
+<section class="w-full scroll-m-12 py-16" id="experience">
+  <div class="mx-auto w-full max-w-5xl">
+    <header>
+      <h2 class="text-4xl font-bold">Experiencia</h2>
+    </header>
+    <div class="mt-10 flex flex-col gap-8 md:gap-12">
+      {EXPERIENCE.map((item) => <ExperienceCard {...item} />)}
+    </div>
+  </div>
+</section>
