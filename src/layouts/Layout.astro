@@ -1,16 +1,49 @@
 ---
-import "@/styles/global.css";
+import '@/styles/global.css';
+import '@fontsource-variable/montserrat';
+import Navbar from '@/sections/Navbar.astro';
+import Footer from '@/sections/Footer.astro';
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-    <title>Guidzero | Portafolio Personal</title>
+    <title>Portafolio de Guidzero | Desarrollador web</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <meta
+      name="description"
+      content="Portafolio de Guidzero. Desarollador web enfocado en crear aplicaciones de la maxima calidad. "
+    />
+
+    <meta
+      property="og:title"
+      content="Portafolio de Guidzero | Desarrollador web"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio de Guidzero. Desarollador web enfocado en crear aplicaciones de la maxima calidad."
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image"
+      content="https://guidoperezr.github.io/cafeteria-landing-page/images/og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Imagen con la informacion del sitio web de Guidzero"
+    />
+    <meta name="author" content="Guidzero" />
+    <meta name="keywords" content="Guidzero, Desarrollador web, Portafolio" />
+    <meta name="robots" content="index, follow" />
   </head>
-  <body>
+
+  <body class="font-montserrat bg-[#2f0f16] text-white">
+    <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
