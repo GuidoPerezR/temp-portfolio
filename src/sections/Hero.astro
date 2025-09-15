@@ -1,0 +1,71 @@
+---
+import Contact from '@/components/icons/Contact.astro';
+import GitHub from '@/components/icons/GitHub.astro';
+import LinkedIn from '@/components/icons/LinkedIn.astro';
+---
+
+<section
+  class="mx-auto flex min-h-[90dvh] w-full scroll-m-12 flex-col items-center justify-center py-12 md:min-h-fit md:pb-16 md:pt-24"
+  id="home"
+>
+  <div class="w-full max-w-5xl">
+    <header>
+      <div class="relative size-56 lg:size-64">
+        <img
+          src="/profile.webp"
+          alt="Foto de perfil de Guidzero caracterizada"
+          class="h-full w-full select-none rounded-full object-cover object-top"
+          draggable="false"
+        />
+        <div class="absolute bottom-0 right-0 -translate-y-6 translate-x-28">
+          <span class="rounded-full bg-pink-900 p-2">🐈</span>
+          <span class="text-sm font-medium text-white/80"
+            >Arreglando bugs...</span
+          >
+        </div>
+      </div>
+      <h1 class="leading-14 mt-4 text-5xl font-bold">
+        Hey, soy <span class="text-secondary">Guidzero</span>
+      </h1>
+    </header>
+    <p class="text-md mt-2 lg:mt-4">Tu desarrollador de confianza</p>
+    <p class="mt-6 text-pretty text-xl font-semibold md:max-w-2xl">
+      <span class="text-secondary">Desarrollador Web</span> enfocado en construir
+      aplicaciones atractivas y optimizadas, usando tecnologías como <span
+        class="text-secondary">Astro, JavaScript y Tailwind CSS.</span
+      > Especialista en centrar divs.
+    </p>
+    <footer class="mt-8 flex items-center gap-8">
+      <a
+        href="https://github.com/GuidoPerezR"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Ir a Github"
+        aria-label="Ir al perfil de GuidoPerezR en Github"
+        ><GitHub
+          class="hover:text-secondary size-8 transition-all duration-200 hover:scale-110 lg:size-9"
+        /></a
+      >
+      <a
+        href="https://www.linkedin.com/in/guidoperezr/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Ir a LinkedIn"
+        aria-label="Ir al perfil de guidoperezr en LinkedIn"
+        ><LinkedIn
+          class="hover:text-secondary size-8 transition-all duration-200 hover:scale-110 lg:size-9"
+        /></a
+      >
+      <a
+        href="mailto:guidoperez27@hotmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Enviar correo"
+        aria-label="Enviar correo a guidoperez27@hotmail.com"
+        ><Contact
+          class="hover:text-secondary size-8 transition-all duration-200 hover:scale-110 lg:size-9"
+        /></a
+      >
+    </footer>
+  </div>
+</section>
