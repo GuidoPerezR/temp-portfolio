@@ -1,32 +1,50 @@
-# 🎨 Portafolio Temporal - Guido Pérez
+# 🐈 Portafolio de Guidzero
 
-Portafolio personal temporal construido con Astro. Este proyecto sirve como una solución provisional mientras desarrollo mi portafolio principal, permitiéndome tener una presencia web profesional desde el inicio.
+![Portafolio Preview](https://guidzero.dev/og-image.png)
 
-## 📋 Descripción
+> Portafolio personal de Guido Pérez Ruiz - Desarrollador Web
 
-Este es un portafolio temporal que muestra mis proyectos, habilidades y experiencia como desarrollador. Está diseñado para ser rápido, limpio y fácil de mantener mientras trabajo en una versión más elaborada.
+## 📖 Sobre el proyecto
 
-## 🛠️ Tecnologías
+Este es mi portafolio personal desarrollado con **Astro**, diseñado para mostrar mis proyectos, experiencia y habilidades como desarrollador web. El sitio está optimizado para ofrecer una experiencia rápida, atractiva y profesional.
 
-- **Astro** - Framework web moderno para sitios rápidos
-- **TypeScript** - Tipado estático para JavaScript
-- **pnpm** - Gestor de paquetes eficiente
+### ✨ Características principales
 
-## 🚀 Estructura del Proyecto
+- 🚀 **Rendimiento optimizado** - Construido con Astro para máxima velocidad
+- 🎨 **Diseño moderno y responsivo** - Interfaz atractiva adaptada a todos los dispositivos
+- 📱 **Navegación intuitiva** - Secciones claramente definidas y fáciles de explorar
+- 🌐 **Multilingüe** - Contenido en español
+- 📄 **Descarga de CV** - Currículum disponible en formato PDF
 
-```text
-/
-├── public/          # Archivos estáticos
-│   └── favicon.svg
-├── src/
-│   ├── assets/      # Recursos (imágenes, etc.)
-│   ├── components/  # Componentes reutilizables
-│   ├── layouts/     # Plantillas de página
-│   └── pages/       # Páginas del sitio
-└── package.json
-```
+## 🛠️ Tecnologías utilizadas
 
-## 💻 Comandos Disponibles
+- [Astro](https://astro.build/) - Framework web moderno
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programación
+- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS
+- [Zod](https://zod.dev/) - Validación de esquemas
+
+## 📂 Secciones del portafolio
+
+### 🏠 Inicio
+Presentación personal con enlaces a redes sociales y contacto directo.
+
+### 💼 Experiencia
+- **Exytur Ventas** - Desarrollo de aplicación web para automatizar registro de ventas
+- **Universidad Politécnica de Tapachula** - Desarrollo de APIs y sistemas internos
+
+### 🚀 Proyectos destacados
+
+1. **Luminari** - Landing page de galería de arte con animaciones GSAP y parallax
+2. **Nahual Studio** - Sitio web para estudio de diseño gráfico
+3. **Manjares** - Landing page para cafetería con diseño elegante
+
+### 👤 Sobre mí
+Historia personal y trayectoria profesional como desarrollador.
+
+### 📬 Contacto
+Links a GitHub, LinkedIn, correo electrónico y descarga de CV.
+
+## 🚀 Comandos
 
 Todos los comandos se ejecutan desde la raíz del proyecto:
 
@@ -35,42 +53,62 @@ Todos los comandos se ejecutan desde la raíz del proyecto:
 | `pnpm install`            | Instala las dependencias                         |
 | `pnpm dev`                | Inicia el servidor de desarrollo en `localhost:4321` |
 | `pnpm build`              | Construye el sitio para producción en `./dist/`  |
-| `pnpm preview`            | Vista previa del build localmente                |
+| `pnpm preview`            | Previsualiza la build localmente                 |
 | `pnpm astro ...`          | Ejecuta comandos CLI de Astro                    |
-| `pnpm astro -- --help`    | Ayuda para el CLI de Astro                       |
 
-## 📦 Instalación
+## 📁 Estructura del proyecto
 
-```bash
-# Clonar el repositorio
-git clone https://github.com/GuidoPerezR/temp-portfolio.git
-
-# Entrar al directorio
-cd temp-portfolio
-
-# Instalar dependencias
-pnpm install
-
-# Iniciar servidor de desarrollo
-pnpm dev
+```text
+/
+├── public/
+│   ├── about-me.webp
+│   ├── favicon.png
+│   ├── luminari.webp
+│   ├── manjares.webp
+│   ├── nahual-studio.webp
+│   ├── profile.webp
+│   └── files/
+│       └── Currículum_Vitae_Guido_Perez_Ruiz.pdf
+├── src/
+│   ├── components/
+│   │   ├── ExperienceCard.astro
+│   │   ├── ProjectCard.astro
+│   │   ├── SocialCard.astro
+│   │   └── icons/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   └── 404.astro
+│   ├── sections/
+│   │   ├── AboutMe.astro
+│   │   ├── Contact.astro
+│   │   ├── Experience.astro
+│   │   ├── Footer.astro
+│   │   ├── Hero.astro
+│   │   ├── Navbar.astro
+│   │   └── Projects.astro
+│   └── styles/
+│       └── global.css
+└── package.json
 ```
 
-## 🌐 Deployment
+## 🌐 Sitio en vivo
 
-El proyecto está listo para ser desplegado en plataformas como:
-- Vercel
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
+Visita el portafolio en: [guidzero.dev](https://guidzero.dev)
 
-## 📝 Notas
+## 👨‍💻 Autor
 
-Este es un portafolio **temporal**. Una vez que el portafolio principal esté listo, este proyecto servirá como referencia o será archivado.
+**Guido Pérez Ruiz** - Desarrollador Web
+
+- GitHub: [@GuidoPerezR](https://github.com/GuidoPerezR)
+- LinkedIn: [guidoperezr](https://www.linkedin.com/in/guidoperezr/)
+- Email: guidoperez27@hotmail.com
 
 ## 📄 Licencia
 
-Este proyecto es de uso personal.
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
 ---
 
-**Desarrollado por Guido Pérez** 
+**Hecho con VSCode** 💜
